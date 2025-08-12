@@ -1,0 +1,19 @@
+INTERNAL CSS
+
+internal css with selector
+where to use class , id and element.
+
+class : to use where we have apply to all 
+id : to where it is unique
+element : where we have to select elemets for its styling
+
+
+07-08-2025
+when any tag is child it will not use that css only parent tags will use that css
+
+selector
+> sudo element selector
+> sudo class selector 
+
+
+selector: id , class , elements , universal selector, element,element selector

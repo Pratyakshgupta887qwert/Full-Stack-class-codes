@@ -1,0 +1,148 @@
+29/07/2025
+
+this html code does not have any compiler it is indpendent of all compiler it run on browser.
+
+editors and its type of editors:
+1. text based editors (notepad)
+2. what you see is what you get (vs code)
+3. send box editors (online editors)
+
+
+notepad++
+
+
+vs code or web scrolls(jetbrains)
+
+
+browsers : 
+
+net scape
+>> internet exploer
+
+opera and mazola firefox
+
+2010 google chrome
+
+
+engine : chromium (v8 engine)(v8 is javascript is compiler which is inside browser)
+
+
+
+HTML :
+1993 -> --->   1999 (4) ---> 2014 (5)  why to to move 4 to 5 beacuse of facebook.
+
+why to move from 4 to 5 why ? Difference between html 4 and html 5
+
+1. audio/video tags. (adobe flashback)
+2. location map.
+3. animations
+4. canvas
+
+
+
+Difference Between HTML4 and HTML5
+Doctype Declaration:
+
+HTML4: Uses a long and complex doctype declaration.
+Example:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+HTML5: Uses a simple and short declaration.
+Example:
+<!DOCTYPE html>
+
+Semantic Elements:
+
+HTML4: Lacks semantic elements; mostly uses <div> and <span>.
+
+HTML5: Introduces semantic tags like <header>, <footer>, <nav>, <article>, <section>, etc.
+
+Multimedia Support:
+
+HTML4: Requires third-party plugins like Flash for audio and video.
+
+HTML5: Provides built-in support for multimedia using <audio> and <video> tags.
+
+Graphics:
+
+HTML4: No native support for drawing graphics.
+
+HTML5: Supports <canvas> and SVG for drawing shapes and graphics.
+
+Form Features:
+
+HTML4: Basic form controls.
+
+HTML5: Includes new form input types like email, date, url, and attributes like required, autofocus, placeholder.
+
+APIs:
+
+HTML4: Very limited API support.
+
+HTML5: Introduces APIs like Geolocation, Web Storage, Drag and Drop, Web Workers, and WebSockets.
+
+Browser Compatibility:
+
+HTML4: Supported by older browsers.
+
+HTML5: Designed for modern browsers but backward compatible.
+
+Deprecated Elements:
+
+HTML4: Allows usage of presentational tags like <font>, <center>, etc.
+
+HTML5: Many old tags are deprecated; encourages use of CSS for styling.
+
+Error Handling:
+
+HTML4: Strict and less forgiving with errors.
+
+HTML5: More flexible and user-friendly error handling.
+
+
+
+
+
+
+
+
+
+30-07-2025
+
+HTML means : hyper text markup langauge.
+
+hyper text means : it make the link clickable 
+markup langauge : style
+
+manual closing tags and self closing tags
+bold elements and inline elements
+
+
+block elements : height accordingly and  width 100% 
+>> block element take space in first and at the end ; it take 3 line 
+>>> first finish that they are continuing  (it take margin space at top)
+>>> secound that whole line
+>>> third that next line (and it take margin space at end)
+
+inline elements : that is used in particular task and it take particular height and width 
+
+
+CSS
+
+cascading style sheets
+>> 3 type of css : inline css , internal css , external css
+
+>> top priority : inline css
+
+
+
+preformative tag and formative tag
+<pre> tag is the tag which write that only will print the space we want to give we can give .
+
+
+31-07-2025
+
+<div> tag: div tag is the block level element so we will use css for it
+
+
+use of float  : float left and right

@@ -1,0 +1,39 @@
+04-08-2025
+
+lists: we have 2 type of list (ordered list and unordered list)
+
+<ol>
+<li> </li>
+</ol>
+
+<ul>
+<li> </li>
+</ul>
+
+
+section tag:
+
+table tag: <table>table  <tr> table row <td> table data <th> for header
+                cell spacing : space in between 2 cells
+                cell padding : space between content and border .
+
+
+                Specific Attributes for <table>
+Attribute	Description	HTML Version
+border : 	Specifies the width of the border (deprecated in HTML5, use CSS instead)	HTML 4 / ✖ HTML5
+cellpadding	: Space between cell content and cell border (deprecated in HTML5)	HTML 4 / ✖ HTML5
+cellspacing	: Space between cells (deprecated in HTML5)	HTML 4 / ✖ HTML5
+width	: Specifies the width of the table (deprecated in HTML5)	HTML 4 / ✖ HTML5
+height	: Specifies the height of the table (deprecated in HTML5)	HTML 4 / ✖ HTML5
+align	: Alignment of the table on the page (left, right, center) (deprecated)	HTML 4 / ✖ HTML5
+bgcolor	: Background color of the table (deprecated in HTML5)	HTML 4 / ✖ HTML5
+summary	: Provides a summary of the table’s purpose (deprecated in HTML5)	HTML 4 / ✖ HTML5
+frame	: Controls which parts of the outer border are visible	HTML 4 / ✅ HTML5
+rules	: Controls which internal borders are visible (none, groups, rows, etc.)	HTML 4 / ✅ HTML5
+
+
+try to explore the working of all attribute availabe for table tag such as style.
+
+rowspan and colspan
+
+nesting of table

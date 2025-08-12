@@ -1,0 +1,87 @@
+/* ========== CSS SELECTORS ========== */
+
+/* 1. Universal Selector - targets all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Type Selector - targets elements by tag name */
+p {
+  font-size: 16px;
+}
+
+/* 3. Class Selector - targets elements with a specific class */
+.card {
+  background-color: #f0f0f0;
+}
+
+/* 4. ID Selector - targets a single unique element */
+#header {
+  height: 60px;
+}
+
+/* 5. Attribute Selector - targets elements with specific attributes */
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+/* 6. Pseudo-class - targets elements in a specific state */
+a:hover {
+  color: red;
+}
+
+/* 7. Pseudo-element - targets part of an element */
+p::first-line {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ========== CSS COMBINATORS ========== */
+
+/* 1. Descendant Combinator (space) - selects all B inside A (any level deep) */
+div p {
+  color: blue;
+}
+
+/* 2. Child Combinator (>) - selects only direct children B of A */
+div > p {
+  color: green;
+}
+
+/* 3. Adjacent Sibling Combinator (+) - selects B immediately after A */
+h1 + p {
+  color: red;
+}
+
+/* 4. General Sibling Combinator (~) - selects all B siblings after A */
+h1 ~ p {
+  color: orange;
+}
+
+
+
+in this nameing is not a case-sensative . ( classes and id )
+
+
+
+every imp code in html9.html
+
+
+
+
+
+
+
+
+
+
+
+
+position:
