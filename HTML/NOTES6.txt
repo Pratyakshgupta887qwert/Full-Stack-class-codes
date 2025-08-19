@@ -85,3 +85,111 @@ display: contents
 👉 Makes the element disappear, but keeps its children in the DOM/layout as if the parent doesn’t exist.
 
 display: contents;
+
+
+
+
+justify-content and align items:
+
+1. justify-content
+Purpose:
+
+It controls how items are positioned along the main axis (which is horizontal by default).
+
+Applies To:
+
+Flex containers (display: flex)
+Grid containers (display: grid)
+Main Axis (Important to understand):
+The main axis is the direction in which flex items flow:
+flex-direction: row → main axis is horizontal
+flex-direction: column → main axis is vertical
+So justify-content affects horizontal alignment by default.
+
+Common Values:
+Value	Behavior (in flex-direction: row)
+flex-start	Items align to the left
+flex-end	Items align to the right
+center	Items align to the center
+space-between	First item on the left, last on the right, space in between
+space-around	Equal space around items (including edges)
+space-evenly	Equal space between and around all items
+start / end / left / right	Logical alternatives (mostly used in Grid or writing-mode-aware layouts)
+Example:
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+This will push items apart with equal space between them.
+
+2. align-items
+Purpose:
+
+It controls how items are aligned along the cross axis (which is vertical by default).
+
+Applies To:
+
+Flex containers (display: flex)
+Grid containers (display: grid)
+
+Cross Axis:
+
+The cross axis is perpendicular to the main axis.
+flex-direction: row → cross axis is vertical
+flex-direction: column → cross axis is horizontal
+So by default, align-items affects vertical alignment.
+
+Common Values:
+Value	Behavior (in flex-direction: row)
+stretch	(Default) Items stretch to fill container’s height
+flex-start	Items align to the top of the container
+flex-end	Items align to the bottom of the container
+center	Items are vertically centered
+baseline	Items align along the text baseline (used with text)
+Example:
+.container {
+  display: flex;
+  align-items: center;
+}
+
+
+This will vertically center the items inside the container (assuming flex-direction: row).
+
+Using Both Together:
+
+They are commonly used together to center elements both horizontally and vertically.
+
+Example: Centering with Flexbox
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+
+This will place the content exactly in the center of the container.
+
+Key Difference:
+Property	Axis	Default Direction	Affects
+justify-content	Main Axis	Horizontal	Horizontal position
+align-items	Cross Axis	Vertical	Vertical position
+
+This changes if you use flex-direction: column. Then their behavior flips.
+
+Grid Behavior (Briefly)
+
+In CSS Grid, justify-content and align-items work similarly, but they apply to the whole grid or the grid items based on context.
+Grid also includes:
+justify-items (align individual items on the row axis)
+align-items (align individual items on the column axis)
+
+Summary:
+
+Use justify-content to control left to right or top to bottom alignment depending on flex-direction.
+Use align-items to control top to bottom or left to right alignment depending on flex-direction.
+Works only inside flex or grid containers.
+They are key tools for responsive layout and spacing.
+Let me know if you'd like visual diagrams, real layout examples, or how this works with flex-wrap.
