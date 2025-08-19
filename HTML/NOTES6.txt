@@ -1,0 +1,87 @@
+#Display
+
+Core display Values (Grouped for Simplicity)
+🔹 1. Block-Level Elements
+
+These take up the full width, always start on a new line.
+
+display: block
+👉 Think: <div>, <section>, <p>
+
+display: block;
+
+
+display: flow-root
+👉 Like block, but creates a new Block Formatting Context (BFC)
+(Useful to clear floats without clearfix hacks)
+
+🔸 2. Inline-Level Elements
+
+They flow inline, don't start new lines. Can’t change width/height easily.
+
+display: inline
+👉 Think: <span>, <a>
+
+display: inline;
+
+
+display: inline-block
+👉 Behaves like inline but you CAN set width/height
+
+display: inline-block;
+
+🔧 3. Flexbox
+
+Used for 1D layouts (row or column). Parent becomes a flex container.
+
+display: flex
+
+display: flex;
+
+
+✔ Items align in a row by default
+✔ Use justify-content, align-items, flex-direction, etc.
+
+display: inline-flex
+👉 Same as flex, but container acts inline.
+
+🧮 4. Grid
+
+Used for 2D layouts — rows AND columns.
+
+display: grid
+
+display: grid;
+
+
+✔ Use grid-template-columns, grid-template-rows, etc.
+
+display: inline-grid
+👉 Same as grid but inline.
+
+🧊 5. Table
+
+Make an element behave like an HTML table.
+
+display: table
+
+display: table-row, table-cell, etc.
+
+Useful for very specific layout needs (kinda old school but still relevant sometimes).
+
+🕳️ 6. None
+
+display: none
+👉 Hides the element completely (removes it from layout & DOM flow)
+
+display: none;
+
+
+⚠️ Not the same as visibility: hidden (that hides visually but keeps space)
+
+🪞 7. Contents
+
+display: contents
+👉 Makes the element disappear, but keeps its children in the DOM/layout as if the parent doesn’t exist.
+
+display: contents;
