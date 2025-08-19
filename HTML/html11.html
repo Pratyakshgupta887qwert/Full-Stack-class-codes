@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positions</title>
+    <style>
+      div {
+        border: solid 2px black;
+      }
+      .static {
+        position: static;
+        background-color: grey;
+        padding: 20px;
+        left: 100px;
+        top: 500px;
+      }
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        padding: 20px;
+        background-color: gold;
+      }
+      .container {
+        border: 1px solid black;
+        padding: 20px;
+        background-color: lightblue;
+        position: relative;
+        height: 1000px;
+        top: 100px;
+      }
+      .child {
+        background-color: lightgreen;
+        border: 1px solid darkgreen;
+        padding: 20px;
+        margin: 10px;
+      }
+      .child1 {
+        position: absolute;
+        border: 1px solid purple;
+        top: 10px;
+        left: 10px;
+        background-color: lightcoral;
+      }
+      .child2 {
+        position: fixed;
+        border: 1px solid darkblue;
+        top: 10px;
+        left: 10px;
+        background-color: orangered;
+      }
+      .child3 {
+        position: sticky;
+        border: 1px solid brown;
+        top: 10px;
+        left: 10px;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static">this is a div.</div>
+    <div class="relative">this is a div2.</div>
+    <div class="static">thus is a div3.</div>
+    <div class="container">
+      <div class="child1">this is a div 1.</div>
+      <div class="child2">this is a div 2.</div>
+      <div class="child3">this is a div 3.</div>
+    </div>
+  </body>
+</html>

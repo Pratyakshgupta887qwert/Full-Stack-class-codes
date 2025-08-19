@@ -1,0 +1,75 @@
+position Property in CSS — Explained Like a Pro
+🌐 Syntax:
+selector {
+  position: static | relative | absolute | fixed | sticky;
+}
+
+🧩 1. static (Default)
+
+Elements flow normally in the document (top to bottom).
+You can’t use top, right, bottom, or left with it.
+Not affected by z-index.
+Use case? Default layout, nothing special.
+
+div {
+  position: static;
+}
+
+📍 2. relative
+
+Element stays in the normal flow, but you can shift it using top, right, bottom, left.
+Still takes up its original space.
+Use case? When you wanna nudge stuff around a bit.
+
+div {
+  position: relative;
+  top: 10px; /* moves down */
+  left: 20px; /* moves right */
+}
+
+🎯 3. absolute
+
+Element is removed from normal flow.
+Positioned relative to the nearest positioned ancestor (the closest parent with position: relative, absolute, or sticky).
+If no such ancestor? Then it positions relative to the <html> / viewport.
+Use case? Popup menus, tooltips, floating boxes.
+
+div {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+📌 4. fixed
+
+Completely removed from normal flow.
+Always positioned relative to the viewport — doesn't move when you scroll.
+Good for things like navbars or floating action buttons.
+Use case? Sticky headers, floating widgets, scroll-to-top buttons.
+
+div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+🧷 5. sticky
+
+Acts like relative until a scroll hits a certain threshold, then it sticks like fixed.
+Needs top, bottom, etc. and a scrollable container with height.
+Use case? Sticky headers in tables, scroll indicators.
+
+div {
+  position: sticky;
+  top: 0;
+}
+
+🧠 Bonus: z-index
+
+Works with relative, absolute, fixed, sticky (not static).
+Controls which element appears "on top".
+
+div {
+  position: absolute;
+  z-index: 999;
+}
