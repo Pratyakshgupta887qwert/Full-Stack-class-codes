@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<style>
+    body{
+        counter-reset: s;
+    }
+    h1::before{
+        counter-increment: s;
+        content: counter(s)":";
+    }
+    h1{
+        counter-reset: ss;
+    }
+    h2::before{
+        counter-increment: ss;
+        content:counter(s)"."counter(ss)"}";
+    }
+</style>
+<body>
+    <h1>name of students</h1>
+    <h2>a</h2>
+    <h2>b</h2>
+    <h2>c</h2>
+    <h2>d</h2>
+    <h1>roll number of students</h1>
+    <h2>1</h2>
+    <h2>2</h2>
+    <h2>3</h2>
+    <h2>4</h2>
+    <h1>marks of student</h1>
+    <h2>00</h2>
+    <h2>00</h2>
+    <h2>00</h2>
+    <h2>00</h2>
+</body>
+</html>
