@@ -1,1 +1,17 @@
 Forms
+
+action	:   URL where the form data goes when submitted (like a server endpoint).
+method	:   HTTP method: "GET" or "POST" (GET for visible data in URL, POST for hidden/secure data).
+target	:   Where to open the response. E.g., _self, _blank, etc.
+autocomplete	: On/off for autofill.
+enctype	:   Used with POST to specify data encoding (e.g., multipart/form-data for file uploads).
+novalidate: 	Disables HTML5 form validation.
+name	:   Name of the form (useful in JavaScript).
+onsubmit	:   Runs JS when form is submitted.
+
+<input> – text fields, radio buttons, checkboxes, etc.
+<label> – describes inputs.
+<textarea> – for multi-line input.
+<select> + <option> – dropdowns.
+<button> or <input type="submit"> – submit the form.
+<fieldset> + <legend> – for grouping and labeling form sections.
