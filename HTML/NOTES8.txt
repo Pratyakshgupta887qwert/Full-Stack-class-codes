@@ -15,3 +15,6 @@ onsubmit	:   Runs JS when form is submitted.
 <select> + <option> – dropdowns.
 <button> or <input type="submit"> – submit the form.
 <fieldset> + <legend> – for grouping and labeling form sections.
+
+
+input , name , required (mandatory to fill that place), placeholder (hint to the form that where we have to what)

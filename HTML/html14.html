@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms</title>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="write about yourself:">
+    <input type="password" name = "password hai yaah" placeholder="write your password" required>
+
+<!--    we never use "value" inside the form -->
+
+
+<!--    IMP-->
+<!--by using "autofocus" it make that first to fill that -->
+    <input type="text" placeholder="write about yourself:">
+    <input type="password" name = "password hai yaah" placeholder="write your password" required autofocus>
+
+<!-- "autocomplete" fill the form automaticlly by browser cache    -->
+    <input type="text" placeholder="write about yourself:" autocomplete="on">
+    <input type="password" name = "password hai yaah" placeholder="write your password" required autocomplete="on">
+
+<!--    "disable" this is used when you have written "value" in this and you want to disable this-->
+    <input type="text" value="You can't touch this " disabled>
+
+<!--    pattern-->
+
+    <input
+            type="text"
+            name="username"
+            placeholder="Only letters and numbers"
+            pattern="[A-Za-z0-9]+"
+            required
+    >
+
+</form>
+</body>
+</html>
