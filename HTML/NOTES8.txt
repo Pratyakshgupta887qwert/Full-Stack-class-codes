@@ -18,3 +18,6 @@ onsubmit	:   Runs JS when form is submitted.
 
 
 input , name , required (mandatory to fill that place), placeholder (hint to the form that where we have to what)
+
+
+readonly and disabled in for as in text
