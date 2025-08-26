@@ -11,13 +11,18 @@ User name , Email* , Password*  , confirm password* , contact no , home_address 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>form</title>
 </head>
+<style>
+    span{
+        color: red;
+    }
+</style>
 <body>
     <form>
         <p>User Name</p>
         <input type="Name" placeholder="User Name">
-        <p>Password*</p>
+        <p>Password<span>*</span> </p>
         <input type="Password" placeholder="Password" required>
-        <p>Confirm password*</p>
+        <p>Confirm password<span>*</span></p>
         <input type="confirm password" placeholder="Confirm Password" required>
         <p>Contact No</p>
         <input type="number" placeholder="Contact Number">
