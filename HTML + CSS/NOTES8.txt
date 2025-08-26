@@ -29,3 +29,115 @@ methord : that data in the link
 
 get : get uses url for data transmation.
 post : post use http protocols for transfering data.
+
+
+Difference between HTTP GET and POST Methods
+Last Updated : 16 Sep, 2024
+HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource. The most commonly used HTTP request methods are GET, POST, PUT, PATCH, and DELETE. This article covers the 2 most common HTTP request methods, i.e. the GET & POST Methods among the rest of the methods.
+
+Table of Content
+
+HTTP GET
+HTTP POST
+Difference between HTTP GET and HTTP POST
+HTTP GET
+The HTTP GET method requests data from a server without altering its state. It appends parameters to the URL, making it suitable for retrieving non-sensitive data. Commonly used for viewing content, GET is ideal for requests that don't involve data modification.
+
+Example: In the following HTML code we have created a form with text fields such as Username and City. we have also included a PHP file getmethod.php where our data would be sent after we click the submit button.
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="getmethod.php" method="GET">
+        Username:
+          <input type="text" name="username" /> <br>
+        City:
+          <input type="text" name="city" /> <br>
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
+In the following PHP code using the GET method we have displayed the Username and city.
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    Welcome
+    <?php echo $_GET["username"]; ?> </br>
+    Your City is:
+    <?php echo $_GET["city"]; ?>
+</body>
+
+</html>
+Output: Data passed in GET method is clearly visible in the address bar, which can compromise the security.
+
+HTTP POST
+The HTTP POST method sends data from the client to the server to create or update resources, storing data in the request body. It's suitable for secure data transfer, like images or documents, with security relying on encryption (HTTPS), authentication, and validation.
+
+Example: In the following HTML code we have created a form with text field as Username and Area of study. we have also included a PHP file postmethod.php, where our data would be sent after we click the submit button.
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="postmethod.php" method="post">
+        Username:
+          <input type="text" name="username" /> <br>
+        Area of Study:
+          <input type="text" name="area" /> <br>
+
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
+In the following PHP code using the POST method we have displayed the Username and Area of study.
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    Welcome
+    <?php echo $_POST["username"]; ?> </br>
+    YOur Area of Study is:
+    <?php echo $_POST["area"]; ?>
+</body>
+
+</html>
+Output: Data passed in POST method is not shown in the address bar, which maintains the security.
+
+Difference between HTTP GET and HTTP POST
+HTTP GET
+
+HTTP POST
+
+In GET method we can not send large amount of data rather limited data of some number of characters is sent because the request parameter is appended into the URL.
+GET request is comparatively better than Post so it is used more than the Post request.
+GET requests are only used to request data (not modify)
+GET request is comparatively less secure because the data is exposed in the URL bar.
+Request made through GET method are stored in Browser history.
+GET method request can be saved as bookmark in browser.
+In GET method only ASCII characters are allowed.
+Request made through GET method are stored in cache memory of Browser.
+Data passed through GET method can be easily stolen by attackers as the data is visible to everyone.GET requests should never be used when dealing with sensitive data
+In GET method, the Encoding type is application/x-www-form-urlencoded
+
+
+
+In POST method large amount of data can be sent because the request parameter is appended into the body.
+POST request is comparatively less better than Get method, so it is used less than the Get request.
+POST requests can be used to create and modify data.
+POST request is comparatively more secure because the data is not exposed in the URL bar.
+Request made through POST method is not stored in Browser history.
+POST method request can not be saved as bookmark in browser.
+Request made through POST method are not stored in cache memory of Browser.
+Data passed through POST method can not be easily stolen by attackers as the URL Data is not displayed in the URL
+In POST method all types of data is allowed.
+In POSTmethod, the encoding type is application/x-www-form-urlencoded or multipart/form-data. Use multipart encoding for binary data
