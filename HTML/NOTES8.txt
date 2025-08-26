@@ -21,3 +21,11 @@ input , name , required (mandatory to fill that place), placeholder (hint to the
 
 
 readonly and disabled in for as in text
+
+
+action button after form tag
+
+methord : that data in the link
+
+get : get uses url for data transmation.
+post : post use http protocols for transfering data.

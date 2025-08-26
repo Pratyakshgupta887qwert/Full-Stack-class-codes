@@ -2,14 +2,29 @@
 
 lists: we have 2 type of list (ordered list and unordered list)
 
-<ol>
+
+they are 3 type of list
+1.<ol>
 <li> </li>
 </ol>
 
-<ul>
+2. <ul>
 <li> </li>
 </ul>
 
+
+3. HTML Description Lists
+A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+
+Example
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
 
 section tag:
 
