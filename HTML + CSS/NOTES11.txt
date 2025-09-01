@@ -1,0 +1,117 @@
+TRANSFORMATION , TRANSITION AND ANIMATIONS
+
+Transformation :
+2D → translate, rotate, scale, skew, matrix
+
+3D → translate3d, rotate3d, scale3d, perspective
+
+translate(x, y)
+→ Moves the element.
+
+transform: translate(50px, 20px); /* right 50px, down 20px */
+
+
+translateX(n)
+→ Moves horizontally.
+
+transform: translateX(100px);
+
+
+translateY(n)
+→ Moves vertically.
+
+transform: translateY(-50px); /* moves up */
+
+
+rotate(angle)
+→ Spins the element around its center.
+
+transform: rotate(45deg);
+
+
+scale(x, y)
+→ Grows or shrinks the element.
+
+transform: scale(2, 1.5); /* 2x wide, 1.5x tall */
+
+
+scaleX(n) / scaleY(n)
+→ Scales in one direction only.
+
+transform: scaleX(1.5);
+
+
+skew(x-angle, y-angle)
+→ Slants the element.
+
+transform: skew(20deg, 10deg);
+
+
+skewX(angle) / skewY(angle)
+→ Slants only in one direction.
+
+transform: skewX(30deg);
+
+
+matrix(a, b, c, d, e, f)
+→ The raw math version combining translate, scale, skew, and rotate in one function.
+
+transform: matrix(1, 0.3, 0.2, 1, 20, 10);
+
+ 3D Transform Functions
+
+translateZ(z) / translate3d(x, y, z)
+→ Moves the element in 3D space.
+
+transform: translate3d(50px, 100px, 200px);
+
+
+rotateX(angle) / rotateY(angle) / rotateZ(angle)
+→ Rotates around X, Y, or Z axis.
+
+transform: rotateX(45deg);
+
+
+rotate3d(x, y, z, angle)
+→ Rotates around a custom 3D axis.
+
+transform: rotate3d(1, 1, 0, 60deg);
+
+
+scaleZ(n) / scale3d(x, y, z)
+→ Scales in 3D.
+
+transform: scale3d(1.5, 2, 0.5);
+
+
+perspective(n)
+→ Gives a sense of depth (used with 3D transforms).
+
+transform: perspective(500px) rotateY(45deg);
+
+
+
+
+
+Transition :
+property → what you want to animate (width, background, transform, etc.)
+
+Or use all to apply to every animatable property.
+
+duration → how long it takes (s or ms) → e.g. 0.3s, 500ms.
+
+timing-function → how the speed of the animation behaves:
+
+ease (default) → slow → fast → slow
+
+linear → same speed all the way
+
+ease-in → starts slow then speeds up
+ease-out → starts fast then slows down
+ease-in-out → slow start + slow end
+
+cubic-bezier(x,y,x,y) → custom curve (super flexible)
+
+steps(n, start|end) → jumps in steps instead of smooth
+
+delay → wait before starting (e.g. 1s)
