@@ -10,3 +10,101 @@ Example: A ball keeps bouncing up and down automatically.
 
 Transition = “change smoothly when something happens”
 Animation = “move however I want, whenever I want”
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Bet 👌 let’s break down **CSS `animation`** in the same easy format you liked:
+
+---
+
+## 🎯 **Syntax**
+
+```css
+selector {
+  animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+}
+```
+
+---
+
+## 📌 **All values (in order)**
+
+1. **`name`** → The `@keyframes` name you created.
+
+   > Example: `bounce`, `spin`, `fadeIn`
+
+2. **`duration`** → How long the animation takes (e.g. `2s`, `500ms`).
+
+3. **`timing-function`** → The speed curve:
+
+   * `ease` (default, smooth start & end)
+   * `linear` (same speed)
+   * `ease-in` (slow start, fast end)
+   * `ease-out` (fast start, slow end)
+   * `ease-in-out` (slow → fast → slow)
+
+4. **`delay`** → Wait before starting (e.g. `1s`).
+
+5. **`iteration-count`** → How many times:
+
+   * `1` (once)
+   * `3` (3 times)
+   * `infinite` (loop forever)
+
+6. **`direction`** → Which way to play:
+
+   * `normal` (default)
+   * `reverse` (backwards)
+   * `alternate` (forward then back)
+   * `alternate-reverse` (back then forward)
+
+7. **`fill-mode`** → What happens before/after animation:
+
+   * `none` (default, goes back)
+   * `forwards` (keeps last frame)
+   * `backwards` (applies first frame before starting)
+   * `both` (keeps first + last effects)
+
+8. **`play-state`** → Run or pause:
+
+   * `running` (default)
+   * `paused` (stops where it is)
+
+---
+
+## ✨ Example
+
+```css
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  animation: bounce 2s ease-in-out 1s infinite alternate forwards;
+}
+```
+
+👉 This means:
+
+* Use `bounce` animation
+* Takes `2s` per loop
+* Eases in & out
+* Starts after `1s` delay
+* Runs `infinite` times
+* Plays `alternate` (up then down)
+* Stays in last frame (`forwards`)
+
+---
+
+⚡ **Shortcut to remember:**
+`animation: name duration timing delay count direction fill-state;`
+
+---
