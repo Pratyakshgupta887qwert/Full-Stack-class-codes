@@ -1,0 +1,12 @@
+Difference between transition and animation :
+
+Transition 👉 Smooth change from one style to another, but it only happens when something triggers it (like hover, click, etc).
+Example: A button smoothly changes color when you hover over it.
+
+Animation 👉 A planned set of moves that can run on its own, even without hover. You can make it repeat, bounce, spin, etc.
+Example: A ball keeps bouncing up and down automatically.
+
+⚡ Shortcut to remember:
+
+Transition = “change smoothly when something happens”
+Animation = “move however I want, whenever I want”
