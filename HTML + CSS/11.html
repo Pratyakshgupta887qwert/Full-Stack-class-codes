@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Cup Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #c3c3c3;
+    }
+    .container {
+      display: flex;
+      height: 250px;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      border: 1px solid black;
+      border-radius: 50%;
+      position: relative;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .cup {
+      position: relative;
+      height: 100px;
+      width: 120px;
+      border: 3px solid black;
+      border-radius: 15px 15px 50% 50%;
+      border-bottom-width: 6px;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      overflow: hidden;
+      background: white;
+    }
+    .coffee {
+      position: absolute;
+      bottom: 0;
+      height: 0; /* start empty */
+      background-color: orange;
+      width: 116px;
+      border-radius: 0 0 50% 50%;
+      animation: fillCoffee 3s ease-in-out forwards;
+    }
+    @keyframes fillCoffee {
+      from {
+        height: 0;
+      }
+      to {
+        height: 82px;
+      }
+    }
+    .handle {
+      position: absolute;
+      left: 185px; /* shifted outside cup */
+      top: 75px;
+      height: 60px;
+      width: 40px;
+      border: 6px solid black;
+      border-left: none;
+      border-radius: 0 50% 50% 0;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+      background: transparent;
+    }
+    @keyframes rise {
+      from {
+        transform: translateY(0) scale(0.8);
+        opacity: 0.6;
+      }
+      to {
+        transform: translateY(-60px) scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cup">
+      <div class="coffee"></div>
+      <div class="steam"></div>
+    </div>
+    <div class="handle"></div>
+  </div>
+</body>
+</html>

@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume</title>
+    <title>Navigation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333; 
+
+        } 
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+             
+        }
+         header nav ul li{
+            margin-right: 20px;
+
+         }
+         header nav a {
+            text-decoration: none;
+            color: #fff;
+         }
+       .hero{
+        padding: 3em;
+        background-color:darkgray;
+        text-align: center;
+       }
+       .heros{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: cornsilk;
+        justify-content: center;
+       }
+       .feature{
+        margin: 10px;
+        padding: 10px;
+        width:calc(33.33% - 40px);
+        border: 1px solid black;
+        box-shadow:0 0 10px;
+        
+       }
+       footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+       }
+       @media only screen and (max-width:780px){
+        .feature{
+            width: calc(60% - 40px);
+            background-color:blue;
+            color: aquamarine;
+        }
+        @media only scren and (max-width: 450px){
+            .header nav ul{
+                flex-direction: column;
+            }
+            .feature{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+       }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+<ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+
+        </nav>
+    </header>
+    <main class="rr">
+    <section class="hero">
+        <h1>Welcome to our website</h1>
+        <p>Technical languages use is html and CS   S</p>
+
+    </section>
+    <section class="heros">
+        <div class="feature"><h2>Feature1</h2><P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eligendi nobis ea laudantium numquam vero quisquam alias, voluptatibus culpa, possimus veritatis fugiat expedita maiores architecto distinctio eaque magnam reiciendis iste! Aliquid dolores nobis iusto cumque a hic maiores voluptate soluta consectetur ipsum, natus facere ad optio velit suscipit placeat praesentium.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus assumenda vitae voluptatibus porro quidem voluptatum voluptas doloremque et soluta aperiam in eum, omnis natus eligendi odio corporis. Soluta ullam ad error unde necessitatibus eum, illo vero enim iure tenetur amet incidunt architecto quod? Minus adipisci asperiores nulla modi! Odio atque, numquam doloremque natus iure amet in aperiam, molestias laborum sit modi perferendis labore architecto tempora. Natus eaque alias consectetur aperiam molestiae corrupti odio illum, beatae exercitationem qui at ut quis laboriosam reprehenderit voluptates, explicabo animi cum voluptas minima, hic autem similique? Molestiae explicabo consectetur facilis incidunt veniam, labore dolorum? </P></div>
+        <div class="feature"><h2>Feature2</h2><P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eligendi nobis ea laudantium numquam vero quisquam alias, voluptatibus culpa, possimus veritatis fugiat expedita maiores architecto distinctio eaque magnam reiciendis iste! Aliquid dolores nobis iusto cumque a hic maiores voluptate soluta consectetur ipsum, natus facere ad optio velit suscipit placeat praesentium.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ut beatae earum tempora voluptate ipsa, eos provident quas nisi. Quibusdam quis odit, iure rerum dolores officia velit, distinctio magni molestiae quo doloremque alias ut minima nisi. Animi fugit, rerum facere voluptatem, expedita ad nulla deleniti recusandae eaque repellendus nam optio sunt, corporis veritatis autem possimus laudantium molestias dicta sapiente veniam. Repellendus tenetur alias optio veniam culpa commodi autem rem tempora corporis quos aut dicta laboriosam incidunt ipsam modi, voluptas doloribus a voluptates, fuga suscipit velit enim! Consequatur, exercitationem sunt ea mollitia dolorem ratione consectetur, illo, magnam labore aspernatur unde repellendus!</P></div>
+        <div class="feature"><h2>Feature3</h2><P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eligendi nobis ea laudantium numquam vero quisquam alias, voluptatibus culpa, possimus veritatis fugiat expedita maiores architecto distinctio eaque magnam reiciendis iste! Aliquid dolores nobis iusto cumque a hic maiores voluptate soluta consectetur ipsum, natus facere ad optio velit suscipit placeat praesentium.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate doloremque modi porro fugit, labore officia? Amet ducimus recusandae dignissimos unde odit consequatur nam odio nemo quidem repellendus voluptate quibusdam reprehenderit, molestiae sed maxime eaque vel temporibus perferendis. Praesentium veritatis dolore minima expedita nam officia? Sed quaerat vel facere harum fuga. Nisi tempora est illo, laudantium voluptates recusandae nemo aut doloremque dignissimos voluptatum officiis deleniti ullam autem minima soluta eligendi ipsum quisquam, placeat eum iure eveniet! Cum eligendi, voluptatem cumque provident impedit, voluptate praesentium veritatis sapiente maxime magni velit quisquam. Voluptatem velit cum illo sit numquam iste asperiores eaque? Quis?</P></div>
+    </section>
+    </main>
+    <footer>
+        <p>GLA&copyright reserved 2025</p>
+    </footer>
 </body>
 </html>
