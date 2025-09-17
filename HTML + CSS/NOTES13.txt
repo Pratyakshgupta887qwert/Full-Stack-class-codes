@@ -1,0 +1,5 @@
+flex , grid and media query
+
+flex --> 1d
+grid --> 2d
+media query --> 3d
