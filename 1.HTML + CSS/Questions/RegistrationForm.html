@@ -1,0 +1,54 @@
+<!-- being a developer your client is demanding you  to design a registration page having the following fields 
+with some validation
+Users name ,Email* ,Password*,confirm password*,contact no,home address save button forgot button and reset button    
+Write down the complete HTMl code for the same while field having * are mandatory to fill -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation page</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+    
+<form>
+    <table>
+      <tr>
+        <td><label>User Name:</label></td>
+        <td><input type="text" placeholder="Enter your full name"></td>
+      </tr>
+      <tr>
+        <td><label>Email*:</label></td>
+        <td><input type="email" placeholder="Enter your email address" required></td>
+      </tr>
+      <tr>
+        <td><label>Password*:</label></td>
+        <td><input type="password" placeholder="Enter password (min 6 chars)" minlength="6" required></td>
+      </tr>
+      <tr>
+        <td><label>Confirm Password*:</label></td>
+        <td><input type="password" placeholder="Re-enter your password" required></td>
+      </tr>
+      <tr>
+        <td><label>Contact No:</label></td>
+        <td><input type="tel" placeholder="10-digit mobile number"></td>
+      </tr>
+      <tr>
+        <td><label>Home Address:</label></td>
+        <td><textarea rows="3" cols="20" placeholder="Enter your home address"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Submit</button>
+          <button type="button">Forgot</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

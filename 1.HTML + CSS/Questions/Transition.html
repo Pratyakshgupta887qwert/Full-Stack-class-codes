@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255 , 0 , 0 , 0.64);
+            
+        }
+        .abc{
+            height: 200px;
+            width: 200px;
+            background-color: #4dff00e4;
+           
+            /* in this hex value the a3 value is alpha value which is used for transparency 
+            and it varies from 00 to ff. we can set any thing according to our requirement between them.
+             */
+        }
+        #opacity{
+            background-color: #ffa511;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        heading For Div 
+    </div><br>
+    <div class="abc">
+        heading For Div 
+    </div>
+    <br>
+    <div id="opacity">
+        Heading For Div  
+
+    </div>
+</body>
+</html>
+
+<!-- 
+imp lines 
+If we use alpha channel it only manupulate our colors in div container but if we use opacity it will manupulate both colors and content of the container. -->

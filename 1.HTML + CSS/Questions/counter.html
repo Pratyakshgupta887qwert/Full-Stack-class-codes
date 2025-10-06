@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: chapter;
+}
+h2 {
+  counter-increment: chapter;
+}
+h2::before{
+  content: "Chapter " counter(chapter) ": ";
+}
+</style>
+</head>
+<body>
+<h1>Chapter list</h1>
+<h2>Title</h2>
+<h2>Introduction</h2>
+<h2>Literature Review</h2>
+<h2>Conclusion</h2>
+
+</body>
+</html>
