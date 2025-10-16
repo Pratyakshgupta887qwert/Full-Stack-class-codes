@@ -37,8 +37,8 @@ else if(num3>num2 && num3>num1){
 }
 
 //switch
-switch (a>b && a>c){
-    case1 : console.log("a");
-    break;
-    case
-}
+// switch (a>b && a>c){
+//     case1 : console.log("a");
+//     break;
+//     // case;
+// }
