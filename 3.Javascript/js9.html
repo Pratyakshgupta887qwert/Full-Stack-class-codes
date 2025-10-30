@@ -1,0 +1,56 @@
+<!--
+getElementsById()
+getElementsByTagName()
+getElementsByName()
+getElementByClassName()
+
+inline css has least priority in dom.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        .demo{
+            background: indianred;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <H1 id="demo" class="demm" name="dro">Section O</H1>
+    <script>
+        const heading=document.getElementById("demo");
+        // heading.textContent="class btech";  here in this the <i> tag will not work but in innerHTML <i> tag will work.
+
+// for class
+        const heading=document.getElementsByClassName("demm")[0];
+// for tagname
+
+
+
+        heading.innerHTML=`<i>class btech</i>`;
+// type 1
+        heading.style.color="red";
+        heading.style.border="2px solid red";
+        heading.style.backgroundColor="yellow";
+
+        // now we are using inline css
+// type 2
+        heading.style.cssText="color:blue; Color:blue";
+
+        // now we are creating the object : key value pair.
+// type 3
+        Object.assign('heading',{
+            fontSize:'12px',
+            fontWeight:'bold',
+        })
+// type 4 : above the head section
+        heading.classList.add('demo');
+    </script>
+</body>
+</html>
+
+
