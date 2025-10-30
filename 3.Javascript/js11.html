@@ -1,0 +1,44 @@
+<!-- 
+events:
+
+onclick
+ondblclick
+onmousedown
+onmouseup
+onmousemove
+onmouseover
+onmouseout
+onmouseenter 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        .demo{
+            background: indianred;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <H1 id="demo" class="demm" name="dro">Section O</H1>
+    <button onclick="changedata()">click sei change hoga</button>
+    <button onmouseover="changedata()">hover sei change hoga</button>
+    <script>
+
+function changedata(){
+// for class
+        const heading=document.getElementsByClassName("demm")[0];
+// for tagname
+
+        heading.innerHTML=`<i>class btech</i>`;
+        heading.classList.add('demo');
+}
+        
+    </script>
+</body>
+</html>
