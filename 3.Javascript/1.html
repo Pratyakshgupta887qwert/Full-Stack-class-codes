@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius:50%;
+            background-color:red;
+            border:2px solid black;
+            position: relative;
+        }
+        .control{
+            margin-top: 30px;
+        }
+        @keyframes bounce {
+            0%{top: 0;}
+            50%{top: 200px;}
+            100%{top: 0;}
+        }
+        .bounce{
+            animation: bounce 1s infinite ease-in;
+        }
+        button{
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="ball"></div>
+<div class="control">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</div>
+<script>
+    const ball = document.querySelector(".ball");
+    const startBtn = document.getElementById("start");
+    const stopBtn = document.getElementById("stop");
+
+    startBtn.addEventListener('click', () => {
+        ball.classList.add('bounce');
+    });
+
+    stopBtn.addEventListener('click', () => {
+        ball.classList.remove('bounce');
+    });
+</script>
+</body>
+</html>

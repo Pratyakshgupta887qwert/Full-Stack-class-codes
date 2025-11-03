@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="main">
+        <h2>To-Do List</h2>
+        <div class="input-section">
+            <input type="text" id="text" placeholder="Add to-do item">
+            <button id="add-btn">Add</button>
+            <ul id="data"></ul>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById('text');
+        const addBtn = document.getElementById('add-btn');
+        const list = document.getElementById('data');
+        const clearBtn = document.getElementById('clear');
+
+        addBtn.addEventListener('click', () => {
+            const value = input.value.trim();
+            if (value === '') return; 
+
+            const li = document.createElement('li');
+            li.textContent = value;
+            list.appendChild(li);
+
+            input.value = ''; 
+        });
+
+        clearBtn.addEventListener('click', () => {
+            list.innerHTML = ''; 
+        });
+    </script>
+</body>
+</html>
