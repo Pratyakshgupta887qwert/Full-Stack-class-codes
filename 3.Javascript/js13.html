@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SetTimeout Example</title>
+</head>
+<body>
+  <script>
+
+    let tp = setTimeout(function() {
+      alert("Hello!");
+    }, 5000);
+
+    let n = prompt("Are you willing to terminate? (y/n)");
+
+    if (n === 'y' || n === 'Y') {
+      clearTimeout(tp);
+      console.log("Timeout terminated ✅");
+    } else {
+      console.log("Timeout will continue ⏳");
+    }
+
+    console.log(tp);
+  </script>
+</body>
+</html>
