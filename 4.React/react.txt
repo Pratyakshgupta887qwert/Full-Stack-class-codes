@@ -10,3 +10,9 @@ some drawback of react :
 vite last year was introduce 
 -> memory size 
 -> time 
+
+framework works on this:
+mvc : model views controller
+
+
+    npm create vite@latest
