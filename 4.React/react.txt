@@ -1,0 +1,12 @@
+react is just a library
+
+difference between library and framework?
+--> framework : collection of multiple library ( angular , dotnet )
+--> library : ( react )
+
+some drawback of react :
+
+
+vite last year was introduce 
+-> memory size 
+-> time 
