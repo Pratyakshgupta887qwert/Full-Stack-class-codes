@@ -1,0 +1,59 @@
+# Ignore React6 project folder
+/4.React/React6/
+
+# Node dependencies
+/node_modules/
+**/node_modules/
+
+# Build outputs
+/dist/
+/build/
+/out/
+
+# Vite
+.vite/
+dist/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Coverage and reports
+/coverage/
+/coverage/**
+
+# Temp files
+*.tgz
+*.tmp
+*.temp
+
+# Lockfiles (optional: keep if you want them tracked)
+/pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
+
+# macOS Finder tags
+.AppleDouble
+.LSOverride
+
+# Others
+*.swp
