@@ -3,3 +3,24 @@ ls -h  in linux we will use ls -a
 
 >> this is relative path:
 cd OneDrive/Desktop
+
+cd ..  : for moving to at first
+cd ../ : ek piche
+
+for changing the Drive
+cd E:/
+
+clear
+
+mkdir
+
+cd 
+
+
+// for creating the file.
+ echo "hello world"> a.txt
+
+// for display the content.
+ cat a.txt
+
+ 
