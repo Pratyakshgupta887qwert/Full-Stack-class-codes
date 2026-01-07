@@ -1,0 +1,5 @@
+dir
+ls -h  in linux we will use ls -a
+
+>> this is relative path:
+cd OneDrive/Desktop
