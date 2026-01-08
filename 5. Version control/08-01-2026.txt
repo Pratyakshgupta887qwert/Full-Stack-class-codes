@@ -6,3 +6,30 @@ pwd
 / is the base directory in the ubantu
 
 id
+
+
+cd ../..
+cd home : contains all users
+ls pratyaksh : user is their in ubantu
+
+2 type of path:
+    1. absolute path : /home/user/documents/report.txt
+    2. relative path
+
+sudo : super user do
+
+touch a.txt
+nano a.txt
+
+
+nano mei jaa kar lik do fir ctrl+z , y , enter to go out
+
+cat a.txt : to view
+
+rm a.txt : file remove
+rmdir test2 : folder remove
+ rm -rf : force remove.
+
+ rm -rf dirname
+
+ 
