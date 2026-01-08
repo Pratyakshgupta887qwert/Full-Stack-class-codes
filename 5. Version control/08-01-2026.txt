@@ -1,0 +1,8 @@
+// ubantu cmds
+
+ls
+pwd
+
+/ is the base directory in the ubantu
+
+id
