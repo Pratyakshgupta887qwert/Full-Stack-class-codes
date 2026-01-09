@@ -32,4 +32,19 @@ rmdir test2 : folder remove
 
  rm -rf dirname
 
- 
+
+
+ -----------------------------------------------------------------------------------------------------------------------------------------=
+
+ git / github version control 
+
+git --version
+
+mkdir test
+cd test
+echo "helo world" >a.txt
+
+git status
+git add a.txt
+git commit -m "update"
+git log
